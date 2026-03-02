@@ -4,6 +4,7 @@ const withMDX = createMDX();
 
 /** @type {import('next').NextConfig} */
 const config = {
+  basePath: '/docs',
   output: 'export',
   serverExternalPackages: ['@takumi-rs/image-response'],
   reactStrictMode: true,
@@ -11,7 +12,6 @@ const config = {
   images: {
     unoptimized: true,
   },
-  // 禁用不兼容静态导出的功能
   skipTrailingSlashRedirect: true,
 };
 
