@@ -11,14 +11,8 @@ const config = {
   images: {
     unoptimized: true,
   },
-  async rewrites() {
-    return [
-      {
-        source: '/docs/:path*.mdx',
-        destination: '/llms.mdx/docs/:path*',
-      },
-    ];
-  },
+  // 禁用不兼容静态导出的功能
+  skipTrailingSlashRedirect: true,
 };
 
 export default withMDX(config);
