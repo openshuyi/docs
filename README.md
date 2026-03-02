@@ -3,6 +3,8 @@
 This is a Next.js application generated with
 [Create Fumadocs](https://github.com/fuma-nama/fumadocs).
 
+🌐 **Live Site**: https://openshuyi.github.io/docs/
+
 Run development server:
 
 ```bash
